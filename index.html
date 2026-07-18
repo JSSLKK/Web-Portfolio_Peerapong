@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Peerapong Khmephatarapong — Web Portfolio</title>
+<meta name="description" content="Web Portfolio ของ [Peerapong Khmephatarapong] นักศึกษาสาขา [สาขาวิชา]">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== ปุ่มเมนูสำหรับมือถือ ===== -->
+<button class="nav-toggle" id="navToggle" aria-label="เปิดเมนู" aria-expanded="false">
+  <span></span><span></span><span></span>
+</button>
+
+<!-- ===== แถบนำทางด้านซ้าย (แบบ file path) ===== -->
+<nav class="sidenav" id="sidenav">
+  <div class="sidenav__brand">
+    <span class="prompt">$</span> whoami
+    <div class="sidenav__name">[พีรพงศ์ เขมภัทรพงศ์]</div>
+    <div class="sidenav__role">[สาขา วิทยาการคอมพิวเตอร์ / ตำแหน่งที่สนใจ Web Developer]</div>
+  </div>
+
+  <ul class="sidenav__list">
+    <li><a href="#home" class="active"><span class="path">~/home</span></a></li>
+    <li><a href="#about"><span class="path">~/about</span></a></li>
+    <li><a href="#projects"><span class="path">~/projects</span></a></li>
+    <li><a href="#skills"><span class="path">~/skills</span></a></li>
+    <li><a href="#activities"><span class="path">~/activities</span></a></li>
+    <li><a href="#certifications"><span class="path">~/certifications</span></a></li>
+    <li><a href="#experience"><span class="path">~/experience</span></a></li>
+    <li><a href="#contact"><span class="path">~/contact</span></a></li>
+  </ul>
+
+  <div class="sidenav__social">
+    <!-- แก้ลิงก์โซเชียลของคุณตรงนี้ -->
+    <a href="https://github.com/USERNAME" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://linkedin.com/in/USERNAME" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</nav>
+
+<main class="main">
+
+  <!-- ===================================================== -->
+  <!-- 1. HOME -->
+  <!-- ===================================================== -->
+  <section id="home" class="section hero">
+    <p class="mono eyebrow">$ cd ./home</p>
+    <h1 class="hero__title">
+      Hi! My name is <span class="accent">[Peerapong Khmephatarapong]</span>
+    </h1>
+    <p class="hero__subtitle">
+       I am a fourth-year Computer Science student at Bangkok University who is passionate about web development and technology. I enjoy turning ideas into functional, user-friendly web applications and continuously expanding my knowledge of modern development tools and frameworks. I am a motivated, fast learner with strong problem-solving skills and a willingness to take on new challenges. My goal is to start my career as a Web Developer, contribute to meaningful projects, and continue growing as a software developer while delivering valuable solutions for users.
+    </p>
+    <div class="hero__actions">
+      <a href="#projects" class="btn btn--primary">ดูผลงาน</a>
+      <a href="#contact" class="btn btn--ghost">ติดต่อฉัน</a>
+
+    </div>
+    <div class="hero__portraits">
+      <div class="hero__portrait">
+        <img src="images/profile.png" alt="รูปโปรไฟล์ของ [ชื่อ นามสกุล]">
+      </div>
+      <div class="hero__portrait">
+        <img src="images/profile.png" alt="รูปโปรไฟล์อีกภาพของ [ชื่อ นามสกุล]">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================== -->
+  <!-- 2. ABOUT ME -->
+  <!-- ===================================================== -->
+  <section id="about" class="section">
+    <p class="mono eyebrow">$ cat ./about.md</p>
+    <h2 class="section__title">เกี่ยวกับฉัน</h2>
+
+    <div class="about__grid">
+      <div class="about__text">
+        <p>
+          [เขียนประวัติโดยย่อ เช่น เกิดที่ไหน เรียนที่ไหน สนใจด้านเทคโนโลยีตั้งแต่เมื่อไร
+          จุดแข็งของคุณคืออะไร]
+        </p>
+      </div>
+
+      <div class="about__edu">
+        <h3 class="mono">การศึกษา</h3>
+        <ul class="timeline">
+          <li>
+            <span class="timeline__date">[ปี พ.ศ. เริ่ม–ปัจจุบัน]</span>
+            <span class="timeline__title">[ชื่อสถาบัน / คณะ / สาขา]</span>
+            <span class="timeline__desc">[เกรดเฉลี่ย หรือรายละเอียดเพิ่มเติม ถ้ามี]</span>
+          </li>
+          <li>
+            <span class="timeline__date">[ปี พ.ศ.]</span>
+            <span class="timeline__title">[โรงเรียนมัธยม]</span>
+            <span class="timeline__desc">[แผนการเรียน]</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================== -->
+  <!-- 3. PROJECTS -->
+  <!-- ===================================================== -->
+  <section id="projects" class="section">
+    <p class="mono eyebrow">$ ls ./projects</p>
+    <h2 class="section__title">ผลงาน</h2>
+
+    <div class="projects__grid">
+
+      <!-- การ์ดผลงาน — คัดลอกบล็อกนี้เพื่อเพิ่มผลงานใหม่ -->
+      <article class="project-card">
+        <div class="project-card__image">
+          <img src="images/project-1.jpg" alt="ภาพตัวอย่างผลงาน [ชื่อโปรเจกต์ 1]">
+        </div>
+        <div class="project-card__body">
+          <h3>[ชื่อโปรเจกต์ 1]</h3>
+          <p>[อธิบายว่าโปรเจกต์นี้ทำอะไร แก้ปัญหาอะไร และคุณรับผิดชอบส่วนไหน]</p>
+          <ul class="tag-list">
+            <li class="tag">HTML</li>
+            <li class="tag">CSS</li>
+            <li class="tag">JavaScript</li>
+          </ul>
+          <div class="project-card__links">
+            <a href="#" target="_blank" rel="noopener">ดูเว็บไซต์จริง ↗</a>
+            <a href="#" target="_blank" rel="noopener">ดูโค้ด (GitHub) ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__image">
+          <img src="images/project-2.jpg" alt="ภาพตัวอย่างผลงาน [ชื่อโปรเจกต์ 2]">
+        </div>
+        <div class="project-card__body">
+          <h3>[ชื่อโปรเจกต์ 2]</h3>
+          <p>[คำอธิบายผลงาน / รายวิชาที่เกี่ยวข้อง / เครื่องมือที่ใช้]</p>
+          <ul class="tag-list">
+            <li class="tag">Figma</li>
+            <li class="tag">UI/UX</li>
+          </ul>
+          <div class="project-card__links">
+            <a href="#" target="_blank" rel="noopener">ดู Figma ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__image">
+          <img src="images/project-3.jpg" alt="ภาพตัวอย่างผลงาน [ชื่อโปรเจกต์ 3]">
+        </div>
+        <div class="project-card__body">
+          <h3>[ชื่อโปรเจกต์ 3]</h3>
+          <p>[คำอธิบายผลงาน]</p>
+          <ul class="tag-list">
+            <li class="tag">Python</li>
+          </ul>
+          <div class="project-card__links">
+            <a href="#" target="_blank" rel="noopener">ดูโค้ด (GitHub) ↗</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===================================================== -->
+  <!-- 4. TECHNICAL SKILLS -->
+  <!-- ===================================================== -->
+  <section id="skills" class="section">
+    <p class="mono eyebrow">$ cat ./skills.json</p>
+    <h2 class="section__title">ทักษะทางเทคนิค</h2>
+
+    <div class="skills__grid">
+      <div class="skill-group">
+        <h3 class="mono">ภาษาโปรแกรม</h3>
+        <ul class="skill-list">
+          <li><span>JavaScript</span><div class="bar"><div class="bar__fill" style="--level:80%"></div></div></li>
+          <li><span>Python</span><div class="bar"><div class="bar__fill" style="--level:65%"></div></div></li>
+          <li><span>HTML / CSS</span><div class="bar"><div class="bar__fill" style="--level:90%"></div></div></li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <h3 class="mono">เฟรมเวิร์คและฐานข้อมูล</h3>
+        <ul class="skill-list">
+          <li><span>[React / Node.js ฯลฯ]</span><div class="bar"><div class="bar__fill" style="--level:100%"></div></div></li>
+          <li><span>[MySQL / MongoDB ฯลฯ]</span><div class="bar"><div class="bar__fill" style="--level:55%"></div></div></li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <h3 class="mono">เครื่องมือที่ใช้</h3>
+        <ul class="tag-list">
+          <li class="tag">VS Code</li>
+          <li class="tag">Git / GitHub</li>
+          <li class="tag">Figma</li>
+          <li class="tag">[เพิ่มเครื่องมืออื่นๆ]</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================== -->
+  <!-- 5. ACTIVITIES AND CONTRIBUTIONS -->
+  <!-- ===================================================== -->
+  <section id="activities" class="section">
+    <p class="mono eyebrow">$ git log ./activities</p>
+    <h2 class="section__title">กิจกรรมและการมีส่วนร่วม</h2>
+
+    <ul class="timeline timeline--activities">
+      <li>
+        <span class="timeline__date">[วันที่]</span>
+        <span class="timeline__title">[ชื่อการแข่งขัน / แฮกกาธอน]</span>
+        <span class="timeline__desc">[ผลงานหรือรางวัลที่ได้รับ พร้อมคำอธิบายสั้นๆ ว่าทำอะไรในทีม]</span>
+      </li>
+      <li>
+        <span class="timeline__date">[วันที่]</span>
+        <span class="timeline__title">[ชื่อชมรม / กิจกรรมด้านเทคโนโลยี]</span>
+        <span class="timeline__desc">[บทบาทในกลุ่มและสิ่งที่ทำ]</span>
+      </li>
+      <li>
+        <span class="timeline__date">[วันที่]</span>
+        <span class="timeline__title">[ชื่องานสัมมนา / การประชุมด้านเทคโนโลยี]</span>
+        <span class="timeline__desc">[สิ่งที่ได้เรียนรู้จากงานนี้]</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ===================================================== -->
+  <!-- 6. CERTIFICATIONS -->
+  <!-- ===================================================== -->
+  <section id="certifications" class="section">
+    <p class="mono eyebrow">$ ls ./certifications</p>
+    <h2 class="section__title">ใบรับรอง</h2>
+
+    <div class="cert__grid">
+      <div class="cert-card">
+        <h3>[ชื่อใบรับรอง 1]</h3>
+        <p class="mono">[หน่วยงานที่ออกใบรับรอง · ปี พ.ศ.]</p>
+      </div>
+      <div class="cert-card">
+        <h3>[ชื่อใบรับรอง 2]</h3>
+        <p class="mono">[หน่วยงานที่ออกใบรับรอง · ปี พ.ศ.]</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================== -->
+  <!-- 7. WORK EXPERIENCE -->
+  <!-- ===================================================== -->
+  <section id="experience" class="section">
+    <p class="mono eyebrow">$ cat ./experience.log</p>
+    <h2 class="section__title">ประสบการณ์การทำงาน</h2>
+
+    <ul class="timeline">
+      <li>
+        <span class="timeline__date">[ช่วงเวลาที่ทำงาน]</span>
+        <span class="timeline__title">[ตำแหน่งงาน] — [ชื่อบริษัท/องค์กร]</span>
+        <span class="timeline__desc">[หน้าที่ความรับผิดชอบและผลงานสำคัญ]</span>
+      </li>
+    </ul>
+    <!-- ถ้ายังไม่มีประสบการณ์การทำงาน สามารถลบเซกชันนี้ทั้งหมดออกได้ -->
+  </section>
+
+  <!-- ===================================================== -->
+  <!-- 8. CONTACT -->
+  <!-- ===================================================== -->
+  <section id="contact" class="section section--contact">
+    <p class="mono eyebrow">$ ./contact.sh</p>
+    <h2 class="section__title">ติดต่อฉัน</h2>
+    <p class="contact__intro">
+      สนใจร่วมงานหรือพูดคุยเรื่องโปรเจกต์ ติดต่อได้ตามช่องทางด้านล่างนี้ครับ
+    </p>
+
+    <div class="contact__links">
+      <a href="mailto:youremail@example.com" class="contact-link">
+        <span class="mono">Email</span> youremail@example.com
+      </a>
+      <a href="https://github.com/USERNAME" target="_blank" rel="noopener" class="contact-link">
+        <span class="mono">GitHub</span> github.com/USERNAME
+      </a>
+      <a href="https://linkedin.com/in/USERNAME" target="_blank" rel="noopener" class="contact-link">
+        <span class="mono">LinkedIn</span> linkedin.com/in/USERNAME
+      </a>
+    </div>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> [ชื่อ นามสกุล]. All rights reserved.</p>
+    </footer>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
